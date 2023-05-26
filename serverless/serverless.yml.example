@@ -1,0 +1,19 @@
+service: YOUR_SERVICE_NAME
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: us-east-1
+  profile: YOUR_AWS_PROFILE_NAME
+  iam:
+    role: LAMBDA_EXECUTION_ROLE_ARN
+
+functions:
+  car-recognizer:
+    name: FUNCTION_NAME
+    handler: handler.lambda_handler
+    events:
+      - s3:
+          bucket: BUCKET_NAME
+          event: s3:ObjectCreated:*

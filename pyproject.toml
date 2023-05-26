@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "task1"
+version = "0.1.0"
+description = ""
+authors = ["gujamark <guja.markozashvili.1@btu.edu.ge>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.8.4"
+boto3 = "^1.26.141"
+python-dotenv = "^1.0.0"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
