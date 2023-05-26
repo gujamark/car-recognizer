@@ -1,6 +1,6 @@
 # Description
 This is a CLI script for automating aws services. This script automatically downloads images, uploads to bucket and creates a lambda function which is triggered when image is uploaded in S3 bucket. Then sends this image to Carnet API and AWS Rekognition to identify objects on the image
-
+![Architecture](arch.svg)
 ### Dependencies
 - python3
 - aiohttp
